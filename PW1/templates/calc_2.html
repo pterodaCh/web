@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet"  href="../static/styles/style_calc2.css">
+    <script src="../js/calc_2.js"></script>
+</head>
+<body>
+    <!-- <header>
+        <h2>Header</h2>
+    </header>  -->
+
+    <nav class="navbar">
+        <ul>
+            <li> <a href="calc_1.html">Calc_2</a> </li>
+        </ul>    
+    </nav>
+    <!-- <h1>
+        Калькулятор розрахунку складу сухої та горючої маси палива та
+        нижчої теплоти згоряння для робочої, сухої та горючої маси
+    </h1> -->
+    <main>
+        <main class="container">
+
+            <div class="calculator_input">
+                <h2>Параметри розрахунку</h2>
+        
+                <div class="input-group">
+                    <label for="hp">H<sup>P</sup></label>
+                    <input id="hp" type="number" name="hp" placeholder="%" />
+                </div>
+        
+                <div class="input-group">
+                    <label for="cp">C<sup>P</sup></label>
+                    <input id="cp" type="number" name="cp" placeholder="%" />
+                </div>
+        
+                <div class="input-group">
+                    <label for="sp">S<sup>P</sup></label>
+                    <input id="sp" type="number" name="sp" placeholder="%" />
+                </div>
+        
+                <div class="input-group">
+                    <label for="np">N<sup>P</sup></label>
+                    <input id="np" type="number" name="np" placeholder="%" />
+                </div>
+        
+                <div class="input-group">
+                    <label for="op">O<sup>P</sup></label>
+                    <input id="op" type="number" name="op" placeholder="%" />
+                </div>
+        
+                <div class="input-group">
+                    <label for="wp">W<sup>P</sup></label>
+                    <input id="wp" type="number" name="wp" placeholder="%" />
+                </div>
+        
+                <div class="input-group">
+                    <label for="ap">A<sup>P</sup></label>
+                    <input id="ap" type="number" name="ap" placeholder="%" />
+                </div>
+        
+                <button class="calc-button" onclick="calculate()">Розрахувати</button>
+            </div>
+
+            <div class="calculator_result">
+                <h2>Результат</h2>
+                <h3><span id="result">Будь ласка, введіть параметри розрахунку</span></h3>
+            </div>
+            
+        </main>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+         </div>
+        <script src="script.js"></script>
+        
+    </main>
+    
+</body>
+</html>
