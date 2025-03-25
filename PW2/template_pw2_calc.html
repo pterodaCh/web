@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet"  href="style.css">
+    <script src="pw2_calc.js"></script>
+</head>
+<body>
+
+    <!-- <h1>
+    Написати веб калькулятор для розрахунку валових викидів шкідливих речовин у вигляді
+    суспендованих твердих частинок при спалювання вугілля, мазуту та природного газуу
+    </h1> -->
+    <main>
+        <main class="container">
+
+            <div class="calculator_input">
+                <h2>Параметри розрахунку</h2>
+        
+                <div class="input-group">
+                    <label for="donetsk_coal_fuel">Донецьке газове вугілля марки ГР</label>
+                    <input id="donetsk_coal_fuel" type="number" name="donetsk_coal_fuel" placeholder="т" />
+                </div>
+        
+                <div class="input-group">
+                    <label for="s_mazut">Високосірчастий мазут марки 40</label>
+                    <input id="s_mazut" type="number" name="s_mazut" placeholder="т" />
+                </div>
+        
+                <div class="input-group">
+                    <label for="nat_gas_fuel">Природний газ із газопроводу Уренгой-Ужгород</label>
+                    <input id="nat_gas_fuel" type="number" name="nat_gas_fuel" placeholder="м3" />
+                </div>
+ 
+        
+            <button class="calc-button" onclick="calculate()">Розрахувати</button>
+
+                <div class="calculator_result">
+                    <h2>Результат</h2>
+                    <h3><span id="result">Будь ласка, введіть параметри розрахунку</span></h3>
+                </div>
+            </div>
+            
+        </main>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+         </div>
+        <script src="script.js"></script>
+        
+    </main>
+    
+</body>
+</html>
